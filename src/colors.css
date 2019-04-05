@@ -1,0 +1,7 @@
+@value colorPrimary: #29516D;
+@value colorSecondary: #4e5e6a;
+@value colorBackgroundPrimary: hsla(205, 31%, 92%, 1);
+@value colorBackgroundSecondary: white;
+/* @value colorBackgroundSecondary: #FAFDFF; */
+
+@value colorEmpty: white;

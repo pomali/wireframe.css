@@ -1,0 +1,39 @@
+{
+  "name": "wireframe.css",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "main": "src/main.css",
+  "files": [
+    "dist/*.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pomali/wireframe.css.git"
+  },
+  "keywords": ["wireframe", "css", "html", "html5", "prototype", "blueprint", "simple"],
+  "author": "pom (https://github.com/pomali)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pomali/wireframe.css/issues"
+  },
+  "homepage": "https://github.com/pomali/wireframe.css",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/html": "^5.0.6",
+    "babel-loader": "^8.0.5",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-modules": "^1.4.1",
+    "precss": "^4.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

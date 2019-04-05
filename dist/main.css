@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+/* @value colorBackgroundSecondary: #FAFDFF; */
+
+html {
+  color: #29516D;
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  background: white;
+  /* background-color: colorBackgroundPrimary;
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  background-image: linear-gradient(
+      45deg,
+      colorBackgroundSecondary 25%,
+      transparent 25%,
+      transparent 75%,
+      colorBackgroundSecondary 75%,
+      colorBackgroundSecondary
+    ),
+    linear-gradient(
+      45deg,
+      colorBackgroundSecondary 25%,
+      transparent 25%,
+      transparent 75%,
+      colorBackgroundSecondary 75%,
+      colorBackgroundSecondary
+    ); */
+
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NcdPb1TAYiACNIYZyxaDohtaMK8YYQ0cEDABJRJv7iHo3DAAAAAElFTkSuQmCC)
+    repeat;
+}
+
+button {
+  border: 1px solid #29516D;
+  color: #29516D;
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  margin: 1em;
+  padding: 1em;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+span,
+p, time {
+  border: 1px solid #29516D;
+  color: #29516D;
+  background: white;
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  padding: 0.25em;
+}
+
+input {
+  border: 1px solid #29516D;
+  color: #29516D;
+  background: white;
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  padding: 0.75em;
+  margin: 0.5em;
+}
+
+label {
+  border: 1px solid #29516D;
+  color: #4e5e6a;
+  background: white;
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  padding: 0.75em;
+  margin: 0.5em;
+}
+
+img {
+  border: 1px solid #29516D;
+  min-width: 10em;
+  min-height: 10em;
+  background: linear-gradient(
+      to top right,
+      transparent calc(50% - 1px),
+      #29516D calc(50% - 1px),
+      #29516D calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    linear-gradient(
+      to bottom right,
+      transparent calc(50% - 1px),
+      #29516D calc(50% - 1px),
+      #29516D calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    white;
+}
+
+figure {
+  margin: 1em;
+  padding: 0.5em;
+  border: 1px solid #29516D;
+}
+
+article,
+aside,
+details,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  max-width: 60em;
+  border: 1px solid #29516D;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+mark {
+  background-color: hsla(205, 31%, 92%, 1);
+}
+
+/* 
+img:before {
+  content: "We're sorry, the image below is broken :(";
+  display: block;
+  margin-bottom: 10px;
+} */
+
