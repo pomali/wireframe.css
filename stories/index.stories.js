@@ -123,6 +123,24 @@ storiesOf("Example Page", module)
       </main>
       </div>
     `
+  )
+  .add(
+    "Text2+dialog",
+    () => /*html*/ `
+      <div>
+      <h1>Header1</h1>
+      <main>
+      <p>
+      ${loremIpsum}
+      </p>
+
+      <dialog open>${loremIpsum}</dialog>
+      <p>
+      ${loremIpsum}
+      </p>
+      </main>
+      </div>
+    `
   );
 
 storiesOf("Lists", module)

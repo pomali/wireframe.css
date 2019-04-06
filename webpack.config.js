@@ -1,10 +1,25 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserJSPlugin = require("terser-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   mode: "development",
   target: "web",
   entry: "./src/index.js",
+
+  optimization: {
+    minimizer: [
+      new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.optimize\.css$/g,
+        cssProcessor: require("cssnano"),
+        cssProcessorPluginOptions: {
+          preset: ["default", { discardComments: { removeAll: true } }]
+        },
+        canPrint: true
+      })
+    ]
+  },
   output: {
     filename: "./[name].js",
     path: path.resolve(__dirname, "dist")
@@ -47,5 +62,5 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     })
-  ]
+  ],
 };

@@ -46,7 +46,8 @@ h1,
 h2,
 h3,
 span,
-p, time {
+p,
+time {
   border: borderStyle;
   color: colorPrimary;
   background: colorEmpty;
@@ -102,8 +103,6 @@ figure {
 article,
 aside,
 details,
-footer,
-header,
 main,
 nav,
 section,
@@ -114,13 +113,35 @@ summary {
   margin: 0.5em;
 }
 
+footer,
+header {
+  width: 100%;
+  border: borderStyle;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+main,
+footer,
+header {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: colorBackgroundSecondary;
+}
+main {
+  min-height: 10em;
+}
+
 mark {
   background-color: colorBackgroundPrimary;
 }
 
-/* 
-img:before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 10px;
-} */
+dialog {
+  border: borderStyle;
+  border-width: 0.5em;
+  min-height: 10em;
+  min-width: 10em;
+  padding: 1em;
+  margin: 0.5em;
+  background-color: colorBackgroundSecondary;
+}

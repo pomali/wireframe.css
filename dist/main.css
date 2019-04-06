@@ -43,7 +43,8 @@ h1,
 h2,
 h3,
 span,
-p, time {
+p,
+time {
   border: 1px solid #29516D;
   color: #29516D;
   background: white;
@@ -99,8 +100,6 @@ figure {
 article,
 aside,
 details,
-footer,
-header,
 main,
 nav,
 section,
@@ -111,14 +110,36 @@ summary {
   margin: 0.5em;
 }
 
+footer,
+header {
+  width: 100%;
+  border: 1px solid #29516D;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+main,
+footer,
+header {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+main {
+  min-height: 10em;
+}
+
 mark {
   background-color: hsla(205, 31%, 92%, 1);
 }
 
-/* 
-img:before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 10px;
-} */
+dialog {
+  border: 1px solid #29516D;
+  border-width: 0.5em;
+  min-height: 10em;
+  min-width: 10em;
+  padding: 1em;
+  margin: 0.5em;
+  background-color: white;
+}
 
