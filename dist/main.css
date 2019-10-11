@@ -143,3 +143,29 @@ dialog {
   background-color: white;
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid #29516D;
+  margin: 0.5em;
+}
+table tr {
+  margin: 0.5em;
+  border: 1px solid #29516D;
+}
+table th {
+  border: 1px solid #29516D;
+  padding: 0.25em 0.5em;
+}
+table td {
+  border: 1px solid #29516D;
+  padding: 0.25em 0.5em;
+}
+table thead {
+  border: 1px solid #29516D;
+  background-color: hsla(205, 31%, 92%, 1);
+}
+table tfoot {
+  border: 1px solid #29516D;
+  background-color: hsla(205, 31%, 92%, 1);
+}
+

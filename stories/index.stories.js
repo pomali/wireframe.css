@@ -179,3 +179,31 @@ storiesOf("Containers", module)
   .add("summary", () => /*html*/ `<summary>${loremIpsum}</summary>`)
   .add("time", () => /*html*/ `<time>12:20</time>`)
   .add("dialog", () => /*html*/ `<dialog open>${loremIpsum}</dialog>`);
+storiesOf("Tables", module).add(
+  "table",
+  () => /*html*/ `
+    <table>
+      <thead>
+        <tr>
+          <th>header</th>
+          <th>header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>header</th>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="2">Total</th>
+          <td colspan="2">77</td>
+        </tr>
+      </tfoot>
+    </table>`
+);

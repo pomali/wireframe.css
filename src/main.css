@@ -145,3 +145,29 @@ dialog {
   margin: 0.5em;
   background-color: colorBackgroundSecondary;
 }
+
+table {
+  border-collapse: collapse;
+  border: borderStyle;
+  margin: 0.5em;
+}
+table tr {
+  margin: 0.5em;
+  border: borderStyle;
+}
+table th {
+  border: borderStyle;
+  padding: 0.25em 0.5em;
+}
+table td {
+  border: borderStyle;
+  padding: 0.25em 0.5em;
+}
+table thead {
+  border: borderStyle;
+  background-color: colorBackgroundPrimary;
+}
+table tfoot {
+  border: borderStyle;
+  background-color: colorBackgroundPrimary;
+}
